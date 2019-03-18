@@ -1,0 +1,53 @@
+/*Mobile First*/
+
+main{
+    display:grid;
+    height:100vh;
+    grid-template-rows: 15vh 20vh 30vh 20vh 15vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: "header" "menu" "content" "ad" "footer";
+}
+
+.header{
+    background-color: skyblue;
+    grid-area: header;
+}
+.menu{
+    background-color: blueviolet;
+    grid-area: menu;
+}
+.content{
+    background-color: plum;
+    grid-area: content;
+}
+.ad{
+    background-color: blueviolet;
+    grid-area: ad;
+}
+.footer{
+    background-color: skyblue;
+    grid-area: footer;
+}
+
+/*Ecran tablette*/
+@media screen and (min-width:768px){
+    main{
+        grid-template-rows: 15vh 50vh 20vh 15vh;
+        grid-template-columns: 25vw 75vw;
+        grid-template-areas:    "header header"
+                                "menu content"
+                                "ad ad"
+                                "footer footer";
+    }
+}
+
+/*Ecran ordinateur*/
+@media screen and (min-width:1050px){
+    main{
+        grid-template-rows: 20vh 60vh 20vh;
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-template-areas:    "header header header"
+                                "menu content ad"
+                                "footer footer footer";
+    }
+}

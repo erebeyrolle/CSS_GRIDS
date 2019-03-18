@@ -1,0 +1,57 @@
+/*Mobile First*/
+
+main{
+    width:100vw;
+    height:100vh;
+}
+
+.header{
+    background-color: brown;
+    height:15vh;
+}
+.menu{
+    background-color: yellow;
+    height:20vh;
+    border:solid 2px;
+}
+.content{
+    background-color: green;
+    height:30vh;
+}
+.ad{
+    background-color: yellow;
+    height:20vh;
+}
+.footer{
+    background-color: brown;
+    height:15vh;
+}
+
+/*Ecran tablette*/
+@media screen and (min-width:768px){
+    .menu{
+        height:50vh;
+    }
+    .content{
+        height:50vh;
+    }
+}
+
+/*Ecran ordinateur*/
+@media screen and (min-width:1050px){
+    .header{
+        height:20vh;
+    }
+    .menu{
+        height:60vh;
+    }
+    .content{
+        height:60vh;
+    }
+    .ad{
+        height:60vh;
+    }
+    .footer{
+        height:20vh;
+    }
+}
